@@ -1,0 +1,190 @@
+*{
+  margin: 0; 
+  list-style-type: none; /*Tira os pontos do 'li' */
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #1D2226;
+}
+/* Definições do cabeçalho*/
+.cabecalho{
+    background-color: #0F1C26;
+    height: 104px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.cabecalho input {
+    all: unset;
+    padding-left: 20px;
+    background-color: #171B1E;
+    min-height: 40px;
+    min-width: 456px;
+    align-self: center;
+    font-family: 'Manrope';
+    font-size: 16px;
+}
+.cabecalho a, .usuario{
+    color: #FDFDFD;
+    display: flex;
+    align-items: center;
+    font-family: 'Manrope';
+}
+.cabecalho a img {
+    margin: 12px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /*Definções do anuncio de cupom*/
+ .anuncio{
+    /*margin-left: 96.5px;*/
+    font-family: 'Quantico';
+    display: flex;
+    position: relative;
+    background-image: url("Group_4.png"); /*imagem como plano de fundo*/
+    background-size: cover; /*controla o tomanho da imagem de fundo.*/
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 120px;
+ }
+ .money{
+     position: absolute;
+     right: 0;
+     bottom: -15px;
+ }
+
+ .pagina{
+     max-width: 936px;
+     /*margin-left: 96.5px;*/
+ }
+ .alinhar{
+     margin: 24px;
+     align-self: center;
+ }
+ .alinhar-2{
+     position: absolute;
+     align-self: center;
+     left: 500px;
+     font-size: 24px;
+    
+ }
+ .alinhar-2 p{
+     margin-top: 20px;
+ }
+ .cupom{
+     font-size: 16px;
+     display: flex;
+     align-items: center;
+ }
+ .aproveite{
+     font-size: 40px;
+ }
+
+/*definições do catalogo de filmes*/
+ .catalogo h3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 49px;
+    color: #FDFDFD;
+ }
+
+ .top-filmes, .filmes{
+    margin: 0;
+    padding: 0;
+ }
+ .top-filmes button, .filmes button{
+     position: absolute;
+     bottom: 15px;
+     z-index: 10; /*defini qual elemento esta a frente de quem quando usa position*/
+     background-color: #8B54FB;
+     min-width: 152px;
+     left: 4.76px;
+     display: flex;
+     justify-content: space-between;
+     border: 0 none;
+     font-family: 'Manrope';
+     font-size: 12px;
+     font-weight: bold;
+ }
+ .top-filmes img, .filmes img {
+    max-width: 100%;
+}
+.filmes img{
+    margin-top: 24px;
+}
+.top-filmes li, .filmes li {
+    display: inline-block;
+    position: relative;
+    max-width: 164px;
+    max-height: 301px;
+    margin-right: 24px;
+}
+.top-filmes li:nth-child(5), .filmes li:nth-child(5n){
+    margin-right: 0;
+}
+
+/*DEFINICOES DOS LINKS DE GENERO*/
+
+.buttons-category a{
+    border: 2px solid #4a4e51;
+    width: 164px;
+    font-size: 16px;
+    margin-right: 24px;
+    color: #4a4e51;
+    font-family: 'Open Sans';
+    text-align: center;
+    display: inline-block;
+}
+
+
+.buttons-category a:nth-child(5){
+    margin-right: 0;
+}
+
+ /*DEFINIÇÕES DA SACOLA- CARRINHO DE COMPRAS*/
+ .toda-pagina{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding-right: 30px;
+     padding-left: 80px;
+     align-items: flex-start;
+ }
+ .carrinho-compras{
+    flex-grow: 0; /*o zero determina que ele vai ter no maximo o tamanho do flex basis. os valore sao niveis de importancia que dou para os elementos*/
+    flex-basis: 100px;
+    font-family: 'Manrope';
+    color: #FDFDFD;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    margin-left: 25px;
+ }
+.art-sacola{
+    background-color: #A785ED;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+}
+.sacola-vazia{
+    font-size: 20px;
+}
+.add-filmes{
+    font-size: 14px;
+    text-align: center;
+}
+.cupom{
+    font-size: 12px;
+}
